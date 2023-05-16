@@ -1,0 +1,20 @@
+.sx
+{
+    width:101px;
+    height: 40px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 4px;
+    border-color: rgb(194,219,243);
+    border-width: 1px;
+    cursor: pointer;
+}
+.form
+{
+    width:200px;
+    height: 400px;
+    border: 1px solid black;
+    position: absolute;
+    top:20px;
+}

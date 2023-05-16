@@ -14,6 +14,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
+import Add from './Add';
 // import TextField from '@mui/material/TextField';
 // import Button from '@mui/material/Button';
 
@@ -181,16 +182,19 @@ function Userlist(){
           size="small"
           autoComplete="current-password"   value={searchTerm}
        onChange={handleSearch}/>
+      <div>
+        <Add/>
+      </div>
 
 {/* <Button variant="outlined" sx={{marginRight:'50px'}} onClick={handleClickOpen1}>
         ADD
       </Button> */}
 
-      <Box>
+      {/* <Box>
         <UserAdd  data = {propsend}/>
-      </Box>
-   
+      </Box> */}
 </div>
+
 
       
 
