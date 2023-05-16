@@ -15,6 +15,7 @@ import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Add from './Add';
+import Grid from '@mui/material/Grid';
 // import TextField from '@mui/material/TextField';
 // import Button from '@mui/material/Button';
 
@@ -245,13 +246,17 @@ function Userlist(){
         // onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
-      >
-        <DialogTitle sx={{marginLeft:'120px',width: 270}}  id="alert-dialog-title">
-        FORM DETAILS  
-         <IconButton onClick={handleClose} sx={{marginLeft:'80px',marginTop:'-5px'}}>
+      >  
+         <Grid container spacing={1}>
+         {/* <Grid item xs={2} sx={{ marginRight: '10px' }}> */}
+        <DialogTitle sx={{marginLeft:'90px'}}  id="alert-dialog-title">
+        FORM DETAILS
+         
+         <IconButton onClick={handleClose} sx={{marginLeft:'70px',marginTop:'-5px'}}>
          <CloseIcon    />
          </IconButton>
         </DialogTitle>
+        </Grid>
         {/* <IconButton /> */}
        
         <DialogContent>
@@ -260,9 +265,9 @@ function Userlist(){
 
           
 
-      <FormControl sx={{ m: 1, width: 270 }}>
+      <FormControl sx={{  width: 270 }}>
         <Box>
-        <TextField onChange={name} sx={{ width: '100%' ,marginLeft:'50px', }} id="outlined-basic" label="NAME" variant="outlined" />
+        <TextField onChange={name} sx={{ width: '100%' ,marginLeft:'30px', }} id="outlined-basic" label="NAME" variant="outlined" />
         </Box>
        
         
@@ -271,7 +276,7 @@ function Userlist(){
 
       
   <Box>
-<FormControl variant="standard"  sx={{ m: 1, width: 270,marginLeft:'60px' }}>
+<FormControl variant="standard"  sx={{ m: 1, width: 270,marginLeft:'30px' }}>
         <InputLabel id="demo-simple-select-standard-label">SKILLS</InputLabel>
         <Select
           labelId="demo-simple-select-standard-label"
@@ -289,7 +294,7 @@ function Userlist(){
       </Box>
 
       <Box>
-<FormControl variant="standard"  sx={{ m: 1, width: 270 ,marginLeft:'60px'}}>
+<FormControl variant="standard"  sx={{ m: 1, width: 270 ,marginLeft:'30px'}}>
         <InputLabel id="demo-simple-select-standard-label">PRIMARY SKILL</InputLabel>
         <Select
           labelId="demo-simple-select-standard-label"
@@ -308,7 +313,7 @@ function Userlist(){
 
 
       <Box>
-<FormControl variant="standard"  sx={{ m: 1, width: 270 ,marginLeft:'60px'}}>
+<FormControl variant="standard"  sx={{ m: 1, width: 270 ,marginLeft:'30px'}}>
         <InputLabel id="demo-simple-select-standard-label">EXPERIENCE</InputLabel>
         <Select
           labelId="demo-simple-select-standard-label"
@@ -326,7 +331,7 @@ function Userlist(){
       </Box>
 
       <Box>
-<FormControl variant="standard"  sx={{ m: 1, width: 270,marginLeft:'60px' }}>
+<FormControl variant="standard"  sx={{ m: 1, width: 270,marginLeft:'30px' }}>
         <InputLabel id="demo-simple-select-standard-label">DOMAIN</InputLabel>
         <Select
           labelId="demo-simple-select-standard-label"
@@ -362,6 +367,7 @@ function Userlist(){
           </Button> */}
         </DialogActions>
       </Dialog>
+      
 
       
       
