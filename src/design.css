@@ -18,3 +18,73 @@
     position: absolute;
     top:20px;
 }
+.modal-body
+{
+    margin-left: 76px;
+}
+
+.modal-body2
+{
+    margin-left: 93px;
+    margin-bottom: 10px;
+}
+.btedit
+{
+    margin-left: 20px;
+    border-radius: 5px;
+    border-width: 1px;
+
+}
+.btedit1
+{
+    margin-left: 13px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.savebt
+{
+    margin-left: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.savebt1
+{
+    margin-left:13px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.inputbox
+{
+    border-radius: 5px;
+    border-width: 1px;
+    
+}
+.input
+{
+    border-radius: 5px;
+    border-width: 1px;
+    
+}
+
+.option
+{
+    border-radius: 5px;
+    border-width: 1px;
+}
+.opt1
+{
+    border-radius: 5px;
+    border-width: 1px;
+}
+.modal-content
+{
+    width:352px;
+}
+.modal-header
+{
+    margin-left: 80px;
+}
+.modal-footer
+{
+    margin-right: 125px;
+}

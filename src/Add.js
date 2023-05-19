@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './design.css'
+// import './design.css'
 
 const Add = () => {
        const [isOpen, setOpen] = useState(false)
@@ -63,9 +63,9 @@ const Add = () => {
 
                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
-                                   <div class="modal-content">
+                                   <div className="modal-content">
                                           <div class="modal-header">
-                                                 <h5 class="modal-title" id="exampleModalLabel">ADD DETAILS</h5>
+                                                 <h5 className="modal-title" id="exampleModalLabel">ADD DETAILS</h5>
                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                  </button>
@@ -74,48 +74,48 @@ const Add = () => {
                                                  <h6>Skills</h6>
                                                  {skillsEditMode ? (
                                                         <div>
-                                                               <input
+                                                               <input className='input'
                                                                       type="text"
                                                                       value={skillsSelectedOption}
                                                                       onChange={handleSkillsOptionChange}
                                                                />
-                                                               <button onClick={handleSkillsSave}>Save</button>
+                                                               <button className='savebt' onClick={handleSkillsSave}>Save</button>
                                                         </div>
                                                  ) : (
                                                         <div>
-                                                               <select value={skillsSelectedOption} onChange={handleSkillsOptionChange}>
+                                                               <select className='opt1' value={skillsSelectedOption} onChange={handleSkillsOptionChange}>
                                                                       {skillsOptions.map((option) => (
                                                                              <option key={option} value={option}>
                                                                                     {option}
                                                                              </option>
                                                                       ))}
                                                                </select>
-                                                               <button onClick={toggleSkillsEditMode}>Edit</button>
+                                                               <button className='btedit' onClick={toggleSkillsEditMode}>Edit</button>
                                                         </div>
                                                  )}
                                           </div>
 
-                                          <div className="modal-body">
+                                          <div className="modal-body2">
                                                  <h6>Domains</h6>
                                                  {domainsEditMode ? (
                                                         <div>
-                                                               <input
+                                                               <input className='inputbox'
                                                                       type="text"
                                                                       value={domainsSelectedOption}
                                                                       onChange={handleDomainsOptionChange}
                                                                />
-                                                               <button onClick={handleDomainsSave}>Save</button>
+                                                               <button className='savebt1' onClick={handleDomainsSave}>Save</button>
                                                         </div>
                                                  ) : (
                                                         <div>
-                                                               <select value={domainsSelectedOption} onChange={handleDomainsOptionChange}>
+                                                               <select className='option' value={domainsSelectedOption} onChange={handleDomainsOptionChange}>
                                                                       {domainsOptions.map((option) => (
                                                                              <option key={option} value={option}>
                                                                                     {option}
                                                                              </option>
                                                                       ))}
                                                                </select>
-                                                               <button onClick={toggleDomainsEditMode}>Edit</button>
+                                                               <button className='btedit1' onClick={toggleDomainsEditMode}>Edit</button>
                                                         </div>
                                                  )}
                                           </div>
